@@ -68,6 +68,14 @@ local function install(name, target, upgrade)
 end
 
 local cmd, name, target = ...
+if not cmd then
+    print([[USAGE
+    capt install <name> [<target>] - installs the package in the capt register (target directory is optional)
+    capt update - updates the capt program
+    capt upgrade <name> - updates the package
+    ]])
+    return
+end
 if cmd == "install" then
     if not name then
         log("error", "no name provided")
