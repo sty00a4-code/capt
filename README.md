@@ -1,2 +1,2 @@
-# capt
+# CAPT
 CraftOS Advanced Package Tool
