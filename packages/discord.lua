@@ -1,0 +1,1 @@
+return "https://raw.githubusercontent.com/Wendelstein7/DiscordHook-CC/master/DiscordHook.lua"

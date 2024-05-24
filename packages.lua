@@ -1,8 +1,8 @@
 return {
     ["atf"] = { author = "sty00a4-code" },
+    ["sty-farm"] = { author = "sty00a4-code" },
     ["dog"] = { author = "Fatboychummy" },
     ["mine3x3"] = { author = "maxinimus" },
-    ["sty-farm"] = { author = "sty00a4-code" },
     ["veinm"] = { author = "Qendolin" },
     ["netnav"] = { author = "blunty666" },
     ["netnav-map-server"] = { author = "blunty666" },
@@ -16,4 +16,6 @@ return {
     ["basalt"] = { author = "NyoriE" },
     ["iturtle"] = { author = "w00t" },
     ["zed"] = { author = "zip" },
+    ["log4cc"] = { author = "MineCommander" },
+    ["discord"] = { author = "HydroNitrogen" },
 }
