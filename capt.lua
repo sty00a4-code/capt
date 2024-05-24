@@ -1,8 +1,5 @@
 local capt = setmetatable({}, {
     __name = "capt",
-    __newindex = function ()
-        error("module is immutable", 2)
-    end
 })
 capt.RAW_REPO_LINK = "https://raw.githubusercontent.com/sty00a4-code/capt/main"
 function capt.packagePath(path)
