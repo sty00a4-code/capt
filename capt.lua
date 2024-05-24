@@ -3,7 +3,7 @@ local capt = setmetatable({}, {
 })
 capt.RAW_REPO_LINK = "https://raw.githubusercontent.com/sty00a4-code/capt/main"
 function capt.packagePath(path)
-    return capt.RAW_REPO_LINK.."/"..path
+    return capt.RAW_REPO_LINK.."/"..path..".lua"
 end
 ---@param type "info"|"warn"|"cmd"|"error"
 ---@param msg string
@@ -34,7 +34,7 @@ end
 
 function capt.install(name, target, upgrade)
     target = target or ""
-    local url = capt.packagePath("packages/"..name..".lua")
+    local url = capt.packagePath("packages/"..name)
     capt.log("info", "reading from "..url)
     local code, err = capt.readURL(url)
     if not code then
@@ -106,6 +106,10 @@ elseif cmd == "update" then
     local path = capt.packagePath("capt")
     capt.log("info", "reading from "..path)
     local code = capt.readURL(path)
+    if not code then
+        capt.log("error", "couldn't find current capt version")
+        return
+    end
     local fullPath = target.."/capt.lua"
     local file = fs.open(fullPath, "w")
     if not file then
