@@ -21,7 +21,7 @@ function capt.readURL(url)
     return code
 end
 function capt.callCode(code)
-    local chunk, err = load(code, "code")
+    local chunk, err = load(code, "code", nil, _ENV)
     if not chunk then
         return nil, err
     end
