@@ -106,7 +106,7 @@ elseif cmd == "update" then
     local path = capt.packagePath("capt")
     capt.log("info", "reading from "..path)
     local code = capt.readURL(path)
-    local fullPath = target.."/"..name..".lua"
+    local fullPath = target.."/capt.lua"
     local file = fs.open(fullPath, "w")
     if not file then
         return false, "couldn't open file at '"..fullPath.."'"
