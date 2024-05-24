@@ -62,8 +62,8 @@ function capt.install(name, target, upgrade)
             return false, "couldn't open file at '"..fullPath.."'"
         end
         capt.log("info", "writing to "..fullPath)
-        file:write(code)
-        file:close()
+        file.write(code)
+        file.close()
         capt.log("info", "done!")
         return true
     elseif type(res) == "function" then
@@ -112,8 +112,8 @@ elseif cmd == "update" then
         return false, "couldn't open file at '"..fullPath.."'"
     end
     capt.log("info", "writing to "..fullPath)
-    file:write(code)
-    file:close()
+    file.write(code)
+    file.close()
     capt.log("info", "done!")
 elseif cmd == "upgrade" then
     if not name then
