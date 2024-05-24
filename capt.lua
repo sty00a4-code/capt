@@ -52,7 +52,7 @@ function capt.install(name, target, upgrade)
             return false, err
         end
         local fullPath = target.."/"..name..".lua"
-        if upgrade then
+        if not upgrade then
             if fs.exists(fullPath) then
                 return false, "file at '"..fullPath.."' already exists"
             end
