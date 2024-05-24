@@ -37,7 +37,7 @@ end
 
 function capt.install(name, target, upgrade)
     target = target or ""
-    local url = capt.packagePath("packages/"..name)
+    local url = capt.packagePath("packages/"..name..".lua")
     capt.log("info", "reading from "..url)
     local code, err = capt.readURL(url)
     if not code then
