@@ -129,6 +129,13 @@ elseif cmd == "upgrade" then
         capt.log("error", tostring(err))
         return
     end
+elseif cmd == "list" then
+    local code = capt.readURL(capt.RAW_REPO_LINK.."/packages.lua")
+    if not code then
+        capt.log("error", "couldn't find current capt version")
+        return
+    end
+    
 else
     capt.log("error", "invalid command: "..cmd)
     return
