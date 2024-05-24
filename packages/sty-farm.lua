@@ -82,7 +82,7 @@ local function go()
     startNext = false
 end
 
-local paused = false
+local paused = true
 while true do
     if startNext and not paused then
         term.setBackgroundColor(colors.black)
@@ -90,6 +90,8 @@ while true do
         term.setCursorPos(1, 1)
         go()
     end
+    term.setBackgroundColor(colors.black)
+    term.clear()
     term.setTextColor(colors.red or colors.gray)
     term.write "fuel: "
     term.setTextColor(colors.white)
