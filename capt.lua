@@ -65,6 +65,7 @@ function capt.install(name, target, upgrade)
         file:write(code)
         file:close()
         capt.log("info", "done!")
+        return true
     elseif type(res) == "function" then
         capt.log("info", "running installer ")
         local prevDir = shell.dir()
@@ -75,6 +76,7 @@ function capt.install(name, target, upgrade)
             return false, "error in installer: "..tostring(err)
         end
         capt.log("info", "done!")
+        return true
     else
         return false, "package did not return a url or installer"
     end
