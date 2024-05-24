@@ -12,5 +12,8 @@ return {
     ["netnav-remote"] = { author = "blunty666" },
     ["netnav-map-viewer"] = { author = "blunty666" },
     ["expandable-item-sorter"] = { author = "MLGMilk" },
-    ["aHarvester"] = { author = "Kaikaku", version = "1.02c", date="2021-03-05" }
+    ["aHarvester"] = { author = "Kaikaku", version = "1.02c", date="2021-03-05" },
+    ["basalt"] = { author = "NyoriE" },
+    ["iturtle"] = { author = "w00t" },
+    ["zed"] = { author = "zip" },
 }
