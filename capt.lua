@@ -103,6 +103,7 @@ if cmd == "install" then
         return
     end
 elseif cmd == "update" then
+    target = target or ""
     local path = capt.packagePath("capt")
     capt.log("info", "reading from "..path)
     local code = capt.readURL(path)
