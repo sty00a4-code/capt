@@ -1,1 +1,1 @@
-return "https://pastebin.com/raw/zV0FDAdK"
+return "https://gist.githubusercontent.com/sty00a4-code/92f3381724ef3f0f1ef91bb272c4b55d/raw/0bcf7140153558f7e753f6d85da999e08d98a192/sty-farm.lua"
